@@ -97,6 +97,10 @@ footer {
   overflow: hidden;
 }
 
+.menu_underline {
+  text-decoration: underline;
+}
+
 .logo1 {
   width: 25%;
   height: auto;
@@ -133,7 +137,7 @@ nav {
   display: block;
   padding: 10px;
   color: var(--font_col);
-  text-decoration: none;
+  /* text-decoration: none; */
   transition: color 0.3s;
   text-align: end;
 }
@@ -200,7 +204,12 @@ nav {
   }
 }
 
+.menu_underline {
+  text-decoration: 2px underline;
+}
+
 /***** INDEX ****/
+
 .grid_i_1,
 .grid_i_3 {
   color: #ff2a2a;
@@ -261,6 +270,125 @@ nav {
 
 #p5 {
   padding: 0 4cqw 0 4cqw;
+}
+
+.h3_i {
+  color: #ff2a2a;
+  text-transform: uppercase;
+}
+
+.con1_2 {
+  display: flex;
+  margin-bottom: 25cqw;
+  margin-top: 10cqw;
+}
+
+.con_txt1_ {
+  width: 65ch;
+  position: relative;
+  left: 30%;
+  z-index: 20;
+  padding-top: 14cqw;
+}
+
+.con1_a,
+.con1_b {
+  width: 100cqw;
+  position: relative;
+}
+
+.img1_a {
+  width: 100%;
+  position: relative;
+  left: 59%;
+  top: 70%;
+  z-index: 15;
+}
+
+.img1_b {
+  width: 100%;
+  position: relative;
+}
+
+.con1_c {
+  width: 25cqw;
+  position: absolute;
+  left: 15%;
+}
+
+.img1_c {
+  width: 100%;
+  position: relative;
+  right: 10%;
+  z-index: 20;
+  top: 92%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.con2_2 {
+  display: flex;
+  margin-bottom: 25cqw;
+  margin-top: 20cqw;
+}
+
+.con_txt2_ {
+  width: 85ch;
+  position: relative;
+  left: 45%;
+  z-index: 20;
+  padding-top: 11cqw;
+}
+
+.con2_a,
+.con2_b {
+  width: 100cqw;
+  position: relative;
+}
+
+.img2_a {
+  width: 100%;
+  position: relative;
+  left: -61%;
+  top: 1%;
+}
+
+.img2_b {
+  width: 100%;
+  position: relative;
+  z-index: 15;
+  top: 62%;
+  left: -116%;
+}
+
+.con2_c {
+  width: 25cqw;
+  position: absolute;
+  left: 59%;
+  padding-top: 12cqw;
+}
+
+.img2_c {
+  width: 100%;
+  position: relative;
+  z-index: 20;
 }
 
 /*** PROJEKTER ***/
@@ -750,7 +878,7 @@ nav {
   position: absolute;
   width: 13cqw;
   right: 7%;
-  top: 65%;
+  top: 103%;
 }
 
 #om_h1 {
@@ -763,6 +891,32 @@ nav {
 #profile_img {
   width: 50cqw;
   padding: 4cqw;
+}
+#brownflower1 {
+  position: absolute;
+  width: 35cqw;
+  top: 20%;
+  left: 51%;
+  rotate: 55deg;
+}
+#con_flow {
+  width: 42cqw;
+  position: absolute;
+  top: 258%;
+  z-index: -1;
+  rotate: 23deg;
+}
+
+#brownflower2 {
+  position: relative;
+  width: 100%;
+}
+
+#txt6_1 {
+  position: absolute;
+  width: 27cqw;
+  left: 53%;
+  top: 101%;
 }
 
 #om_txt_con4 {
@@ -778,17 +932,71 @@ nav {
 }
 
 #img1_2 {
-  z-index: 1;
+  /* z-index: 1; */
   position: relative;
+  padding-top: 9cqw;
 }
 
-.con1_kontakt {
-  display: flex;
-  justify-content: end;
-  z-index: 3;
-  position: relative;
-  right: 6%;
-  margin-bottom: 3cqw;
+/* modal kode fra chat gpt*/
+/* The Modal (background) */
+.kontakt {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scrolling if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.kontakt-content {
+  background-color: var(--color_box);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  height: 62%;
+  border-radius: 1.5cqw;
+  text-align: center;
+}
+#kontakt_logo {
+  width: 11cqw;
+  border-radius: 0;
+  padding-top: 3cqw;
+}
+
+#kon_h3 {
+  padding-top: 2cqw;
+  padding-bottom: 2cqw;
+  text-transform: uppercase;
+  font-size: 2cqw;
+}
+#kon_p {
+  padding-top: 2cqw;
+  padding-bottom: 2cqw;
+  font-size: 1.5cqw;
+  font-family: var(--primary_font);
+}
+
+#x {
+  width: 4cqw;
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .con_kontakt {
@@ -803,4 +1011,6 @@ nav {
   color: var(--font_col);
   text-transform: uppercase;
   box-shadow: 0.8cqw 0.8cqw 0.1px #4b2c20;
+  position: relative;
+  left: 76%;
 }
