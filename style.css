@@ -191,7 +191,6 @@ nav {
     top: 60px;
     left: 0;
     width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
   }
 
@@ -200,7 +199,8 @@ nav {
   }
 
   nav.active .menu a {
-    font-size: 24px;
+    font-size: 15px;
+    padding-top: 20px;
   }
 }
 
@@ -286,27 +286,28 @@ nav {
 .con_txt1_ {
   width: 65ch;
   position: relative;
-  left: 30%;
+  left: 43%;
   z-index: 20;
-  padding-top: 14cqw;
+  padding-top: 13cqw;
+  text-align: end;
 }
 
 .con1_a,
 .con1_b {
-  width: 100cqw;
+  /* width: 100cqw; */
   position: relative;
 }
 
 .img1_a {
-  width: 100%;
+  width: 573px;
   position: relative;
-  left: 59%;
+  left: 54%;
   top: 70%;
   z-index: 15;
 }
 
 .img1_b {
-  width: 100%;
+  width: 573px;
   position: relative;
 }
 
@@ -319,9 +320,9 @@ nav {
 .img1_c {
   width: 100%;
   position: relative;
-  right: 10%;
+  right: -15%;
   z-index: 20;
-  top: 92%;
+  rotate: -166deg;
 }
 
 @keyframes pulse {
@@ -352,37 +353,30 @@ nav {
 .con_txt2_ {
   width: 85ch;
   position: relative;
-  left: 45%;
+  left: -38%;
   z-index: 20;
-  padding-top: 11cqw;
-}
-
-.con2_a,
-.con2_b {
-  width: 100cqw;
-  position: relative;
+  padding-top: 16cqw;
 }
 
 .img2_a {
-  width: 100%;
+  width: 573px;
   position: relative;
-  left: -61%;
+  left: 9%;
   top: 1%;
 }
 
 .img2_b {
-  width: 100%;
+  width: 573px;
   position: relative;
   z-index: 15;
-  top: 62%;
-  left: -116%;
+  top: 80%;
+  left: -48%;
 }
 
 .con2_c {
   width: 25cqw;
   position: absolute;
-  left: 59%;
-  padding-top: 12cqw;
+  left: 57%;
 }
 
 .img2_c {
@@ -406,85 +400,42 @@ nav {
   width: 35cqw;
   top: 73%;
 }
-
-/** KArusel fra chat GPT **/
-/* Your custom carousel styles go here */
 .carousel {
-  overflow: visible !important; /* Allow the content to overflow the carousel container */
-  margin-top: 3cqw;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
-.slick-track {
-  overflow: visible !important; /* Allow the content to overflow the carousel container */
-}
-
-.slide {
-  text-align: center;
-  padding: 20px;
-  overflow: visible; /* Allow the scaled image to overflow its container */
-}
-
-.slick-slide {
-  padding: 0 20px; /* Adjust padding to avoid cutting off at the border */
-  overflow: visible; /* Allow the scaled image to overflow its container */
-}
-
-.slick-slide img {
-  transition: all 0.3s ease-in-out;
-  width: 100%;
-  height: auto;
-  overflow: visible; /* Allow the scaled image to overflow its container */
-}
-
-.slick-center img {
-  transform: scale(1.2); /* Adjust the scale factor for the center slide */
-  z-index: 1; /* Ensures the center slide appears on top of others */
-  overflow: visible; /* Allow the scaled image to overflow its container */
-  max-width: unset; /* Clear any max-width limitations */
-  max-height: unset; /* Clear any max-height limitations */
-}
-
-.prev-btn {
-  background-color: transparent;
-  position: absolute;
-  top: 74%;
-  z-index: 3;
-}
-
-.next-btn {
-  background-color: transparent;
-  left: 88.3%;
-  position: absolute;
-  top: 74%;
-  z-index: 3;
-}
-
-.buttonsp {
+.slides {
   display: flex;
-  justify-content: center;
-  margin: 1cqw 0 1cqw 0;
+  transition: transform 0.5s ease-in-out;
 }
 
-.buttonp {
-  background-color: white;
-  width: 15cqw;
+.slides img {
+  width: 100%;
   display: block;
-  height: 6cqw;
-  text-align: center;
-  padding-top: 2.5cqw;
-  margin: 1.5cqw;
-  text-decoration: none;
-  color: var(--font_col);
-  padding-left: 1.2cqw;
-  padding-right: 1.2cqw;
-  text-transform: uppercase;
-  box-shadow: 0.8cqw 0.8cqw 0.1px #4b2c20;
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
 
-.txth3_p {
-  text-align: center;
-  color: #7ac943;
+.prevBtn,
+.nextBtn {
+  position: relative;
+  background-color: var(--bagground_col);
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  left: 84%;
+  margin-bottom: 5px;
 }
+
+/* .car_img {
+  text-align: center;
+  margin-top: 5px;
+  color: #7ac943;
+  background-color: var(--color_box);
+} */
 
 /*** tema sider ***/
 .temagrid_1 {
@@ -572,6 +523,7 @@ nav {
 }
 .h2_2 {
   color: var(--t2_col);
+  margin-bottom: 8px;
 }
 
 #flowerorange1 {
@@ -878,7 +830,7 @@ nav {
   position: absolute;
   width: 13cqw;
   right: 7%;
-  top: 103%;
+  top: 96%;
 }
 
 #om_h1 {
@@ -916,7 +868,7 @@ nav {
   position: absolute;
   width: 27cqw;
   left: 53%;
-  top: 101%;
+  top: 95%;
 }
 
 #om_txt_con4 {
