@@ -847,7 +847,7 @@ nav {
   height: auto;
   position: absolute;
   z-index: -2;
-  top: 196%;
+  top: 245%;
   left: 6%;
   rotate: 270deg;
 }
@@ -886,7 +886,7 @@ nav {
 #con_flow {
   width: 42cqw;
   position: absolute;
-  top: 258%;
+  top: 242%;
   z-index: -1;
   rotate: 23deg;
 }
@@ -1247,7 +1247,10 @@ nav {
   }
   .menu_btn {
     font-size: 2cqw;
-    padding-top: 7px;
+    padding-top: 12px;
+    margin-left: 0;
+    width: 70px;
+    height: 30px;
   }
   #p1 {
     top: 16%;
@@ -1389,11 +1392,23 @@ nav {
     top: -7%;
     width: 300px;
   }
+  .web_5 {
+    font-size: 3.5cqw;
+    padding-top: 24px;
+  }
+
+  /* T6 */
   .t6_h2 {
     font-size: 4cqw;
   }
   .con_6 {
     display: grid;
+  }
+
+  .opgavefokus2 {
+    width: 29ch;
+    padding-left: 5%;
+    padding-bottom: 5%;
   }
 
   #txt6_1 {
@@ -1402,6 +1417,8 @@ nav {
     width: 100%;
     left: 0;
   }
+
+  /* om*/
   #om_txt_con4 {
     display: grid;
   }
